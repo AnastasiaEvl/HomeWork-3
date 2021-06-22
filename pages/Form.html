@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Форма</title>
+</head>
+
+<body bgcolor="#929292">
+<h1 align="center"><b>Форма для заполнения</b></h1>
+<p align="center"><b>Заполните форму и наш оператор свяжется с вами для уточнения заказа.</b></p>
+<p align="center"><b>Заказ товара</b></p>
+
+<form action="server.php" method="get" enctype="multipart/form-data">
+    ~
+    <table border="1" width="100%" bgcolor="#EDEDED">
+        <tr>
+            <td align="right" width="30%"><b>Ваше имя</b></td>
+            <td><input type="text" name="userName" required></td>
+        </tr>
+        <tr>
+            <td align="right"><b>Email:</b></td>
+            <td><input type="email" name="UserEmail" required></td>
+        </tr>
+        <tr>
+            <td align="right"><b>Адрес сайта (для оптовых покупок)</b></td>
+            <td><input type="url" name="Site"></td>
+        </tr>
+        <tr>
+            <td align="right"><b>Название товара</b></td>
+            <td><input type="text" name="NameofGood" required></td>
+        </tr>
+        <tr>
+            <td align="right"><b>Фото товара не из нашего магазина для поиска</b></td>
+            <td><input type="file" name="photo"></td>
+        </tr>
+        <tr>
+            <td align="right"><b>Цена,BYN</b></td>
+            <td><input type="number" min="100" value="1500" name="price"></td>
+        </tr>
+        <tr>
+            <td align="right"><b>Операционная система</b></td>
+            <td><input type="radio" name="OS" value="1">Android <br><input type="radio" name="OS" value="2" checked>Apple
+                iOS
+            </td>
+        </tr>
+
+        <tr>
+            <td align="right"><b>Оперативная память</b></td>
+            <td><input type="radio" name="OM" value="1">3 Гб <br><input type="radio" name="OM" value="2" checked>4 Гб
+                <br><input type="radio" name="OM" value="3">6 Гб <br><input type="radio" name="OM" value="4">от 8 Гб и
+                выше
+            </td>
+        </tr>
+        <tr>
+            <td align="right"><b>Флзш-память</b></td>
+            <td><input type="checkbox" name="FM" value="1">32 Гб <br><input type="checkbox" name="FM" value="2">64 Гб
+                <br><input type="checkbox" name="FM" value="3" checked>128 Гб
+            </td>
+        </tr>
+        <tr>
+            <td align="right"><b>Камера, Мп</b></td>
+            <td><input type="checkbox" name="Cam" value="1">8 Мп <br><input type="checkbox" name="Cam" value="2"
+                                                                            checked>12 Мп <br><input type="checkbox"
+                                                                                                     name="Cam"
+                                                                                                     value="3" checked>16
+                Мп и более
+            </td>
+        </tr>
+        <tr>
+            <td align="right"><b>Цвет корпуса</b></td>
+            <td><input type="color" name="color" value="#EDEDED"></td>
+        </tr>
+        <tr>
+            <td align="right"><input type="submit"></td>
+            <td><input type="reset"></td>
+        </tr>
+
+    </table>
+</form>
+
+<p><img src="https://www.kem.by/wp-content/uploads/operator-call.jpg" alt="callCenter"></p>
+<hr>
+&copy;
+
+</body>
+</html>
